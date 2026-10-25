@@ -1342,6 +1342,55 @@ h4 {
     transition: transform 0.6s var(--ease);
 }
 
+/* ---------- 14. Portfolio: kartu potret ---------- */
+.portfolio__media {
+    aspect-ratio: 4 / 5;
+}
+
+.portfolio__icon {
+    width: 32%;
+}
+
+@media (max-width: 480px) {
+    .portfolio__media {
+        aspect-ratio: 4 / 5;
+    }
+
+    /* sebelumnya 1/1 di mobile */
+}
+
+/* ---------- 16. Clients: logo lebih besar ---------- */
+.clients__item {
+    height: 88px;
+    padding-inline: clamp(1.25rem, 1rem + 2vw, 2.75rem);
+}
+
+.clients__item img {
+    height: 64px;
+    max-width: 220px;
+}
+
+.clients__placeholder {
+    min-width: 180px;
+    height: 64px;
+}
+
+@media (max-width: 480px) {
+    .clients__item {
+        height: 72px;
+    }
+
+    .clients__item img {
+        height: 48px;
+        max-width: 150px;
+    }
+
+    .clients__placeholder {
+        min-width: 140px;
+        height: 52px;
+    }
+}
+
 .portfolio__item:hover .portfolio__media img,
 .portfolio__item:hover .portfolio__icon {
     transform: scale(1.06);
@@ -1971,6 +2020,229 @@ html {
     }
 }
 
+/* ---------- 11. LOGO / BRAND ---------- */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-white);
+}
+
+.logo__mark {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    --logo-tile: var(--color-white);
+    --logo-ink: var(--color-navy);
+    transition: transform var(--t-base) var(--ease);
+}
+
+.logo:hover .logo__mark {
+    transform: rotate(-6deg) scale(1.06);
+}
+
+.logo__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    line-height: 1;
+}
+
+.logo__name {
+    font-size: 1.375rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.logo__sub {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.footer__logo {
+    margin-bottom: 1rem;
+}
+
+.footer__logo .logo__mark {
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 359px) {
+    .logo__sub {
+        display: none;
+    }
+}
+
+/* Watermark logo di section CTA */
+.cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.cta__mark {
+    position: absolute;
+    right: -6%;
+    bottom: -28%;
+    width: clamp(280px, 42vw, 560px);
+    height: clamp(280px, 42vw, 560px);
+    opacity: 0.07;
+    pointer-events: none;
+    --logo-tile: transparent;
+    --logo-ink: var(--color-white);
+}
+
+/* ---------- 12. CLIENTS (logo carousel) ---------- */
+.section--compact {
+    padding-block: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+}
+
+.clients__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+.clients__head .eyebrow {
+    margin-bottom: 0.5rem;
+}
+
+.clients__title {
+    font-size: var(--fs-subsection);
+    max-width: 22ch;
+}
+
+.clients__toggle {
+    min-height: 44px;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    transition: border-color var(--t-fast) var(--ease);
+}
+
+.clients__toggle:hover {
+    border-color: var(--color-navy);
+}
+
+.clients__toggle[hidden] {
+    display: none;
+}
+
+/* Tanpa JS / reduced motion: barisan statis, rata tengah, boleh wrap */
+.clients__viewport {
+    overflow: hidden;
+}
+
+.clients__track {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+}
+
+.clients__item {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding-inline: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    /* pakai padding, bukan gap, supaya loop mulus */
+}
+
+.clients__item img {
+    height: 44px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: filter var(--t-base) var(--ease), opacity var(--t-base) var(--ease);
+}
+
+.clients__item:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+.clients__placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    height: 48px;
+    padding-inline: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    border: 1.5px dashed rgba(15, 42, 67, 0.28);
+    border-radius: var(--radius-md);
+}
+
+/* Mode carousel (diaktifkan JS) */
+.clients__viewport.is-marquee {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.is-marquee .clients__track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 0;
+    animation: clients-scroll var(--marquee-duration, 30s) linear infinite;
+}
+
+@keyframes clients-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.is-marquee:hover .clients__track,
+.is-marquee:focus-within .clients__track,
+.is-marquee.is-paused .clients__track {
+    animation-play-state: paused;
+}
+
+@media (max-width: 480px) {
+    .clients__item {
+        height: 56px;
+    }
+
+    .clients__item img {
+        height: 36px;
+        max-width: 120px;
+    }
+
+    .clients__placeholder {
+        min-width: 110px;
+        height: 40px;
+    }
+}
+
 /* =========================
    FONT AWESOME ICONS
    ========================= */
@@ -2008,4 +2280,41 @@ html {
     font-size: 1rem;
     text-align: center;
     flex-shrink: 0;
+}
+
+/* ---------- 16. Clients: logo lebih besar ---------- */
+.clients__item {
+    height: 88px;
+    padding-inline: clamp(1.25rem, 1rem + 2vw, 2.75rem);
+}
+
+.clients__item img {
+    height: 64px;
+    max-width: 220px;
+}
+
+.clients__placeholder {
+    min-width: 180px;
+    height: 64px;
+}
+
+@media (max-width: 480px) {
+    .clients__item {
+        height: 72px;
+    }
+
+    .clients__item img {
+        height: 48px;
+        max-width: 150px;
+    }
+
+    .clients__placeholder {
+        min-width: 140px;
+        height: 52px;
+    }
+}
+
+/* ---------- 15. Portfolio filter animation ---------- */
+.portfolio__grid {
+    align-content: start;
 }

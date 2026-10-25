@@ -13,22 +13,32 @@
     <meta name="author" content="Athryn Creative Industries">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0F2A43">
-    <!-- TODO setelah deploy: <link rel="canonical" href="https://USERNAME.github.io/REPO/"> -->
+    <link rel="canonical" href="https://athryncreativeindustries.github.io/profile/">
 
-    <!-- Open Graph -->
+
+    <!-- Open Graph: WhatsApp & social media preview -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Athryn Creative Industries">
-    <meta property="og:title" content="Athryn Creative Industries | Apparel &amp; Textile Production Partner">
+    <meta property="og:title" content="Athryn Creative Industries | Apparel & Textile Production">
     <meta property="og:description"
-        content="From concept to finished products, Athryn helps businesses, organizations, brands, and communities bring their apparel needs to life.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:locale" content="en_ID">
-    <!-- TODO setelah deploy: og:url dan og:image jadi URL absolut (https://...) supaya preview WhatsApp/sosmed muncul -->
-    <meta name="twitter:card" content="summary_large_image">
+        content="Your partner in apparel and textile production. Based in Kabupaten Bandung, Indonesia.">
+    <meta property="og:url" content="https://athryncreativeindustries.github.io/profile/">
+    <meta property="og:image" content="https://athryncreativeindustries.github.io/profile/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Athryn Creative Industries - Apparel & Textile Production">
 
-    <!-- Favicon sementara (TODO: ganti dengan <link rel="icon" href="assets/logo/favicon.png">) -->
-    <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2A43'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='800' text-anchor='middle' fill='%23F26A21' font-family='Arial,sans-serif'%3EA%3C/text%3E%3C/svg%3E">
+    <!-- Twitter / X preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Athryn Creative Industries | Apparel & Textile Production">
+    <meta name="twitter:description"
+        content="Your partner in apparel and textile production. Based in Kabupaten Bandung, Indonesia.">
+    <meta name="twitter:image" content="https://athryncreativeindustries.github.io/profile/images/og-image.jpg">
+
+
+
+    <!-- Favicon Athryn -->
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -65,12 +75,11 @@
 
     <!-- ========== HEADER / NAVBAR ========== -->
     <header class="site-header" id="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
+        <nav class="navbar container" style="margin-bottom: -20px" aria-label="Main navigation">
 
             <a href="#home" class="navbar__brand" aria-label="Athryn Creative Industries, back to top">
-                <!-- TODO: kalau logo sudah ada, ganti span di bawah dengan:
-        <img src="assets/logo/logo-light.png" alt="Athryn Creative Industries" width="140" height="40"> -->
-                <span class="navbar__wordmark">ATHRYN</span>
+                <img src="assets/logo/logo-light.png" class="rounded-10" alt="Athryn Creative Industries" width="140"
+                    height="40" style="border-radius: 10px;">
             </a>
 
             <div class="navbar__menu" id="navbar-menu">
@@ -107,42 +116,42 @@
             <div class="container hero__inner">
 
                 <div class="hero__content">
-                    <p class="eyebrow reveal">Apparel &amp; Textile Production · Since 2019 · Kabupaten Bandung</p>
+                    <p class="eyebrow reveal">Produksi Pakaian & Tekstil · Sejak 2019 · Kabupaten Bandung</p>
 
                     <h1 id="hero-title" class="hero__title reveal reveal--d1">
-                        Your Partner in <span class="hero__accent">Apparel &amp; Textile</span> Production
+                        Mitra Anda dalam Produksi <span class="hero__accent">Pakaian & Tekstil</span>
                     </h1>
 
                     <p class="hero__text reveal reveal--d2">
-                        From concept to finished products, Athryn Creative Industries helps businesses, organizations,
-                        brands, and communities bring their apparel needs to life.
+                        Dari konsep hingga produk jadi, Athryn Creative Industries membantu perusahaan, organisasi,
+                        merek, dan komunitas mewujudkan kebutuhan produksi pakaian mereka.
                     </p>
 
                     <div class="btn-group reveal reveal--d3">
                         <a class="btn btn--primary"
                             href="https://wa.me/6287733352160?text=Halo%20Athryn%20Creative%20Industries%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produksi%20apparel."
-                            target="_blank" rel="noopener">Chat With Us</a>
-                        <a class="btn btn--light" href="#products">Explore Our Products</a>
+                            target="_blank" rel="noopener">Hubungi Kami</a>
+                        <a class="btn btn--light" href="#products">Lihat Produk Kami</a>
                     </div>
 
-                    <ul class="hero__tags reveal reveal--d3" aria-label="What we stand for">
-                        <li>Flexible Production</li>
-                        <li>Quality Focused</li>
-                        <li>Competitive Pricing</li>
-                        <li>Easy to Work With</li>
+                    <ul class="hero__tags reveal reveal--d3" aria-label="Nilai utama kami">
+                        <li>Produksi Fleksibel</li>
+                        <li>Berfokus pada Kualitas</li>
+                        <li>Harga Kompetitif</li>
+                        <li>Mudah Diajak Bekerja Sama</li>
                     </ul>
                 </div>
 
                 <figure class="hero__media reveal reveal--d2">
-                    <!-- TODO: ganti dengan foto lokal: src="assets/images/hero.jpg" (hapus srcset/sizes kalau pakai 1 file) -->
+                    <!-- TODO: ganti dengan foto lokal: src="assets/images/hero.jpg" (hapus srcset/sizes jika menggunakan satu file) -->
                     <img class="hero__img"
                         src="https://images.pexels.com/photos/29107942/pexels-photo-29107942.jpeg?auto=compress&cs=tinysrgb&w=1200"
                         srcset="https://images.pexels.com/photos/29107942/pexels-photo-29107942.jpeg?auto=compress&cs=tinysrgb&w=800 800w,
                        https://images.pexels.com/photos/29107942/pexels-photo-29107942.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
                         sizes="(max-width: 900px) 100vw, 45vw"
-                        alt="Close-up of hands guiding fabric through a sewing machine" width="800" height="1000"
-                        fetchpriority="high">
-                    <figcaption class="hero__caption">Representative imagery</figcaption>
+                        alt="Tampilan dekat tangan yang mengarahkan kain saat dijahit menggunakan mesin jahit"
+                        width="800" height="1000" fetchpriority="high">
+                    <figcaption class="hero__caption">Ilustrasi proses produksi</figcaption>
                 </figure>
 
             </div>
@@ -154,40 +163,45 @@
 
                 <div class="about__intro">
                     <div class="reveal">
-                        <p class="eyebrow">About Athryn</p>
-                        <h2 id="about-title" class="section__title about__title">Built to Create. Ready to Produce.</h2>
+                        <p class="eyebrow">Tentang Athryn</p>
+                        <h2 id="about-title" class="section__title about__title">Dibangun untuk Berkarya. Siap untuk
+                            Memproduksi.</h2>
                     </div>
 
                     <div class="about__copy reveal reveal--d1">
                         <p>
-                            Athryn Creative Industries is an apparel and textile production company based in Kabupaten
-                            Bandung, West Java. Established in 2019, we provide production solutions for companies,
-                            organizations, brands, communities, and various other needs.
+                            Athryn Creative Industries adalah perusahaan produksi pakaian dan tekstil yang berlokasi di
+                            Kabupaten
+                            Bandung, Jawa Barat. Berdiri sejak 2019, kami menyediakan solusi produksi untuk perusahaan,
+                            organisasi, merek, komunitas, dan berbagai kebutuhan lainnya.
                         </p>
                         <p>
-                            From everyday apparel to uniforms and custom products, we work with customers to turn ideas
-                            and requirements into finished products through a flexible production process.
+                            Mulai dari pakaian sehari-hari hingga seragam dan produk khusus, kami bekerja sama dengan
+                            pelanggan
+                            untuk mewujudkan ide dan kebutuhan mereka menjadi produk jadi melalui proses produksi yang
+                            fleksibel.
                         </p>
                     </div>
                 </div>
 
                 <ul class="about__highlights">
                     <li class="highlight reveal">
-                        <h3 class="highlight__title">Since 2019</h3>
-                        <p class="highlight__text">Experience built through years of apparel production.</p>
+                        <h3 class="highlight__title">Sejak 2019</h3>
+                        <p class="highlight__text">Pengalaman yang terus berkembang selama bertahun-tahun dalam produksi
+                            pakaian.</p>
                     </li>
                     <li class="highlight reveal reveal--d1">
-                        <h3 class="highlight__title">Custom Production</h3>
-                        <p class="highlight__text">Products can be adapted to specific designs, materials, and
-                            requirements.</p>
+                        <h3 class="highlight__title">Produksi Kustom</h3>
+                        <p class="highlight__text">Produk dapat disesuaikan dengan desain, bahan, dan kebutuhan
+                            tertentu.</p>
                     </li>
                     <li class="highlight reveal reveal--d2">
-                        <h3 class="highlight__title">Flexible Solutions</h3>
-                        <p class="highlight__text">Production approaches are adjusted to each project's needs.</p>
+                        <h3 class="highlight__title">Solusi Fleksibel</h3>
+                        <p class="highlight__text">Proses produksi disesuaikan dengan kebutuhan setiap proyek.</p>
                     </li>
                     <li class="highlight reveal reveal--d3">
-                        <h3 class="highlight__title">Based in Bandung</h3>
-                        <p class="highlight__text">Serving customers from Bandung and beyond.</p>
+                        <h3 class="highlight__title">Berbasis di Bandung</h3>
+                        <p class="highlight__text">Melayani pelanggan dari Bandung dan berbagai daerah lainnya.</p>
                     </li>
                 </ul>
 
@@ -199,10 +213,10 @@
             <div class="container">
 
                 <div class="section__header reveal">
-                    <p class="eyebrow">Services</p>
-                    <h2 id="services-title" class="section__title">What We Do</h2>
-                    <p class="lead">We help turn apparel concepts and requirements into finished products through a
-                        flexible production process.</p>
+                    <p class="eyebrow">Layanan</p>
+                    <h2 id="services-title" class="section__title">Apa yang Kami Kerjakan</h2>
+                    <p class="lead">Kami membantu mewujudkan konsep dan kebutuhan pakaian menjadi produk jadi melalui
+                        proses produksi yang fleksibel.</p>
                 </div>
 
                 <ul class="services__grid">
@@ -210,17 +224,17 @@
                     <li class="reveal">
                         <article class="service">
                             <span class="service__num" aria-hidden="true">01</span>
-                            <h3 class="service__title">Apparel Production</h3>
-                            <p class="service__text">Production of various apparel products such as:</p>
+                            <h3 class="service__title">Produksi Pakaian</h3>
+                            <p class="service__text">Produksi berbagai jenis pakaian, seperti:</p>
                             <ul class="service__tags">
-                                <li>T-Shirt</li>
-                                <li>Polo Shirt</li>
+                                <li>Kaos</li>
+                                <li>Kaos Polo</li>
                                 <li>Jersey</li>
-                                <li>Shirt</li>
+                                <li>Kemeja</li>
                                 <li>PDH</li>
                                 <li>Sweater</li>
-                                <li>Jacket</li>
-                                <li>Pants</li>
+                                <li>Jaket</li>
+                                <li>Celana</li>
                             </ul>
                         </article>
                     </li>
@@ -228,16 +242,16 @@
                     <li class="reveal reveal--d1">
                         <article class="service">
                             <span class="service__num" aria-hidden="true">02</span>
-                            <h3 class="service__title">Custom Apparel</h3>
-                            <p class="service__text">Customization may include:</p>
+                            <h3 class="service__title">Pakaian Kustom</h3>
+                            <p class="service__text">Penyesuaian produk dapat mencakup:</p>
                             <ul class="service__tags">
-                                <li>Design</li>
-                                <li>Material</li>
-                                <li>Color</li>
+                                <li>Desain</li>
+                                <li>Bahan</li>
+                                <li>Warna</li>
                                 <li>Logo</li>
-                                <li>Embroidery</li>
-                                <li>Printing</li>
-                                <li>Production details</li>
+                                <li>Bordir</li>
+                                <li>Sablon</li>
+                                <li>Detail Produksi</li>
                             </ul>
                         </article>
                     </li>
@@ -245,16 +259,16 @@
                     <li class="reveal">
                         <article class="service">
                             <span class="service__num" aria-hidden="true">03</span>
-                            <h3 class="service__title">Uniform &amp; Organization Wear</h3>
-                            <p class="service__text">Suitable for:</p>
+                            <h3 class="service__title">Seragam Perusahaan & Organisasi</h3>
+                            <p class="service__text">Cocok untuk kebutuhan:</p>
                             <ul class="service__tags">
-                                <li>Companies</li>
-                                <li>Organizations</li>
-                                <li>Schools</li>
-                                <li>Universities</li>
-                                <li>Communities</li>
-                                <li>Events</li>
-                                <li>Institutions</li>
+                                <li>Perusahaan</li>
+                                <li>Organisasi</li>
+                                <li>Sekolah</li>
+                                <li>Universitas</li>
+                                <li>Komunitas</li>
+                                <li>Acara</li>
+                                <li>Lembaga</li>
                             </ul>
                         </article>
                     </li>
@@ -262,9 +276,9 @@
                     <li class="reveal reveal--d1">
                         <article class="service">
                             <span class="service__num" aria-hidden="true">04</span>
-                            <h3 class="service__title">Product Development</h3>
-                            <p class="service__text">Help customers develop apparel requirements from concept to
-                                finished product.</p>
+                            <h3 class="service__title">Pengembangan Produk</h3>
+                            <p class="service__text">Membantu pelanggan mengembangkan kebutuhan produk pakaian, mulai
+                                dari konsep hingga menjadi produk jadi.</p>
                         </article>
                     </li>
 
@@ -276,28 +290,33 @@
         <!-- ========== PRODUCTS ========== -->
         <section class="section" id="products" aria-labelledby="products-title">
 
-            <!-- Icon sprite (placeholder gambar produk; hapus kalau semua sudah pakai foto) -->
+            <!-- Ikon SVG (placeholder gambar produk; hapus jika semua sudah menggunakan foto) -->
             <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
                 <symbol id="i-shirt" viewBox="0 0 64 64">
                     <path d="M22 8 8 16l5 12 6-3v31h26V25l6 3 5-12-14-8c-2 4-6 6-10 6s-8-2-10-6Z" />
                 </symbol>
+
                 <symbol id="i-jacket" viewBox="0 0 64 64">
                     <path d="M24 8 10 15 6 52l10 3 4-22v25h24V33l4 22 10-3-4-37-14-7-8 8Z" />
                     <path d="M32 16v40" />
                 </symbol>
+
                 <symbol id="i-pants" viewBox="0 0 64 64">
                     <path d="M18 8h28l4 48H36L32 24l-4 32H14Z" />
                     <path d="M18 14h28" />
                 </symbol>
+
                 <symbol id="i-cap" viewBox="0 0 64 64">
                     <path d="M12 38c0-14 9-22 20-22s20 8 20 22Z" />
                     <path d="M52 38c6 0 10 3 10 6H34" />
                     <path d="M32 16v22" />
                 </symbol>
+
                 <symbol id="i-vest" viewBox="0 0 64 64">
                     <path d="M22 8 14 14v42h36V14l-8-6-10 10Z" />
                     <path d="M32 18v38" />
                 </symbol>
+
                 <symbol id="i-fabric" viewBox="0 0 64 64">
                     <path d="M12 20h40v10H12zM16 30h36v10H16zM12 40h40v10H12z" />
                 </symbol>
@@ -306,259 +325,285 @@
             <div class="container">
 
                 <div class="section__header reveal">
-                    <p class="eyebrow">Products</p>
-                    <h2 id="products-title" class="section__title">What We Produce</h2>
-                    <p class="lead">From everyday apparel to jackets, pants, and accessories, we produce a range of
-                        apparel and textile products made to your specifications.</p>
+                    <p class="eyebrow">Produk</p>
+                    <h2 id="products-title" class="section__title">Produk yang Kami Hasilkan</h2>
+                    <p class="lead">
+                        Mulai dari pakaian sehari-hari hingga jaket, celana, dan aksesori, kami memproduksi berbagai
+                        jenis
+                        pakaian dan produk tekstil yang dapat disesuaikan dengan spesifikasi Anda.
+                    </p>
                 </div>
 
-                <!-- APPAREL -->
+                <!-- PAKAIAN -->
                 <div class="product-group">
                     <div class="product-group__head reveal">
-                        <h3 class="product-group__title">Apparel</h3>
+                        <h3 class="product-group__title">Pakaian</h3>
                     </div>
+
                     <ul class="product-grid product-grid--3">
                         <li class="product reveal">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <h4 class="product__name">T-Shirt</h4>
-                            <p class="product__desc">Everyday essentials for teams, events, and brands.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/kaos.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Kaos</h4>
+                            <p class="product__desc">Pakaian sehari-hari untuk tim, acara, dan merek.</p>
                         </li>
+
                         <li class="product reveal reveal--d1">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <h4 class="product__name">Polo / Lacoste</h4>
-                            <p class="product__desc">A smart-casual option for companies and organizations.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/polo.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Kaos Polo / Lacoste</h4>
+                            <p class="product__desc">Pilihan pakaian bergaya kasual yang rapi untuk perusahaan dan
+                                organisasi.</p>
                         </li>
+
                         <li class="product reveal reveal--d2">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
+                            <div class="product__media"><img src="assets/images/portfolio/jersey.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
                             <h4 class="product__name">Jersey</h4>
-                            <p class="product__desc">For teams, communities, and events.</p>
+                            <p class="product__desc">Untuk tim, komunitas, dan berbagai acara.</p>
                         </li>
+
                         <li class="product reveal">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <h4 class="product__name">Shirt</h4>
-                            <p class="product__desc">Clean, structured shirts made to your specifications.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/shirt.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Kemeja</h4>
+                            <p class="product__desc">Kemeja dengan tampilan rapi dan terstruktur sesuai spesifikasi
+                                Anda.</p>
                         </li>
+
                         <li class="product reveal reveal--d1">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
+                            <div class="product__media"><img src="assets/images/portfolio/pdh.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
                             <h4 class="product__name">PDH</h4>
-                            <p class="product__desc">Daily official wear for institutions and organizations.</p>
+                            <p class="product__desc">Pakaian dinas harian untuk instansi dan organisasi.</p>
                         </li>
+
                         <li class="product reveal reveal--d2">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
+                            <div class="product__media"><img src="assets/images/portfolio/sweater.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
                             <h4 class="product__name">Sweater</h4>
-                            <p class="product__desc">Comfortable layers for everyday and group wear.</p>
+                            <p class="product__desc">Pakaian berlapis yang nyaman untuk penggunaan sehari-hari dan
+                                kelompok.</p>
                         </li>
                     </ul>
                 </div>
 
-                <!-- JACKETS (featured) -->
+                <!-- JAKET (PRODUK UNGGULAN) -->
                 <div class="product-group product-group--feature">
                     <div class="product-group__head reveal">
-                        <p class="eyebrow">One of our key capabilities</p>
-                        <h3 class="product-group__title">Jackets</h3>
+                        <p class="eyebrow">Salah satu keunggulan produksi kami</p>
+                        <h3 class="product-group__title">Jaket</h3>
                     </div>
+
                     <ul class="product-grid product-grid--4">
                         <li class="product reveal">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-jacket" />
-                                </svg></div>
-                            <h4 class="product__name">Bomber Jacket</h4>
-                            <p class="product__desc">A classic silhouette, adaptable to your design and materials.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/bomber.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Jaket Bomber</h4>
+                            <p class="product__desc">Model klasik yang dapat disesuaikan dengan desain dan bahan pilihan
+                                Anda.</p>
                         </li>
+
                         <li class="product reveal reveal--d1">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-jacket" />
-                                </svg></div>
-                            <h4 class="product__name">Parasite / Parasut Jacket</h4>
-                            <p class="product__desc">Jackets made from parachute-style fabric for everyday use.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/parasut.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Jaket Parasite / Parasut</h4>
+                            <p class="product__desc">Jaket berbahan kain parasut untuk penggunaan sehari-hari.</p>
                         </li>
+
                         <li class="product reveal reveal--d2">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-jacket" />
-                                </svg></div>
-                            <h4 class="product__name">Casual Jacket</h4>
-                            <p class="product__desc">Versatile everyday jackets made to your specifications.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/jaket.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Jaket Kasual</h4>
+                            <p class="product__desc">Jaket serbaguna untuk aktivitas sehari-hari sesuai spesifikasi
+                                Anda.</p>
                         </li>
+
                         <li class="product reveal reveal--d3">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-jacket" />
-                                </svg></div>
-                            <h4 class="product__name">Custom Jacket</h4>
-                            <p class="product__desc">Made to your design, materials, logo, and details.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/custom.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Jaket Kustom</h4>
+                            <p class="product__desc">Jaket yang dibuat sesuai desain, bahan, logo, dan detail pilihan
+                                Anda.</p>
                         </li>
                     </ul>
                 </div>
 
-                <!-- PANTS -->
+                <!-- CELANA -->
                 <div class="product-group">
                     <div class="product-group__head reveal">
-                        <h3 class="product-group__title">Pants</h3>
+                        <h3 class="product-group__title">Celana</h3>
                     </div>
+
                     <ul class="product-grid product-grid--4">
                         <li class="product reveal">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-pants" />
-                                </svg></div>
-                            <h4 class="product__name">Cargo Pants</h4>
-                            <p class="product__desc">Practical pants with utility-style details.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/cargo.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Celana Kargo</h4>
+                            <p class="product__desc">Celana praktis dengan detail dan kantong fungsional.</p>
                         </li>
+
                         <li class="product reveal reveal--d1">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-pants" />
-                                </svg></div>
-                            <h4 class="product__name">Jeans</h4>
-                            <p class="product__desc">Denim pants made to your specifications.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/jeans.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Celana Jeans</h4>
+                            <p class="product__desc">Celana berbahan denim yang dibuat sesuai spesifikasi Anda.</p>
                         </li>
+
                         <li class="product reveal reveal--d2">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-pants" />
-                                </svg></div>
-                            <h4 class="product__name">Baggy Pants</h4>
-                            <p class="product__desc">Relaxed-fit pants for a contemporary look.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/baggy.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Celana Baggy</h4>
+                            <p class="product__desc">Celana berpotongan longgar dengan tampilan modern.</p>
                         </li>
+
                         <li class="product reveal reveal--d3">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-pants" />
-                                </svg></div>
-                            <h4 class="product__name">Boardshort</h4>
-                            <p class="product__desc">Casual shorts for active and outdoor wear.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/pendek.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Celana Pendek</h4>
+                            <p class="product__desc">Celana pendek kasual untuk aktivitas aktif dan luar ruangan.</p>
                         </li>
                     </ul>
                 </div>
 
-                <!-- ACCESSORIES & OTHERS -->
+                <!-- AKSESORI DAN PRODUK LAINNYA -->
                 <div class="product-group">
                     <div class="product-group__head reveal">
-                        <h3 class="product-group__title">Accessories &amp; Others</h3>
+                        <h3 class="product-group__title">Aksesori & Produk Lainnya</h3>
                     </div>
+
                     <ul class="product-grid product-grid--3">
                         <li class="product reveal">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-cap" />
-                                </svg></div>
-                            <h4 class="product__name">Cap / Hat</h4>
-                            <p class="product__desc">Headwear for brands, teams, and events.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/topi.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Topi</h4>
+                            <p class="product__desc">Produk penutup kepala untuk merek, tim, dan acara.</p>
                         </li>
+
                         <li class="product reveal reveal--d1">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-vest" />
-                                </svg></div>
-                            <h4 class="product__name">Vest</h4>
-                            <p class="product__desc">Layer-friendly vests for group and organization wear.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/rompi.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Rompi</h4>
+                            <p class="product__desc">Rompi yang cocok untuk kebutuhan kelompok dan organisasi.</p>
                         </li>
+
                         <li class="product reveal reveal--d2">
-                            <div class="product__media"><svg class="product__icon" aria-hidden="true" focusable="false">
-                                    <use href="#i-fabric" />
-                                </svg></div>
-                            <h4 class="product__name">Other Textile Products</h4>
-                            <p class="product__desc">Have another textile need? Tell us what you have in mind.</p>
+                            <div class="product__media"><img src="assets/images/portfolio/lainnya.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <h4 class="product__name">Produk Tekstil Lainnya</h4>
+                            <p class="product__desc">Memiliki kebutuhan produk tekstil lainnya? Diskusikan kebutuhan
+                                Anda dengan kami.</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="products__note reveal">
-                    <p>Not sure which product fits your needs?</p>
+                    <p>Belum yakin produk mana yang sesuai dengan kebutuhan Anda?</p>
                     <a class="btn btn--secondary"
                         href="https://wa.me/6287733352160?text=Halo%20Athryn%20Creative%20Industries%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produksi%20apparel."
-                        target="_blank" rel="noopener">Discuss Your Project</a>
+                        target="_blank" rel="noopener">Diskusikan Proyek Anda</a>
                 </div>
 
             </div>
         </section>
-
         <!-- ========== WHY ATHRYN ========== -->
         <section class="section section--dark" id="why-athryn" aria-labelledby="why-title">
             <div class="container why">
 
                 <div class="why__head reveal">
-                    <p class="eyebrow">Why Athryn</p>
-                    <h2 id="why-title" class="section__title">Why Work With Athryn?</h2>
+                    <p class="eyebrow">Mengapa Athryn</p>
+                    <h2 id="why-title" class="section__title">Mengapa Memilih Athryn?</h2>
                 </div>
 
                 <ol class="why__list">
                     <li class="why__item reveal">
                         <span class="why__num" aria-hidden="true">01</span>
-                        <h3 class="why__title">Quality Focused</h3>
-                        <p class="why__text">We pay attention to materials, construction, finishing, and overall product
-                            details.</p>
+                        <h3 class="why__title">Berfokus pada Kualitas</h3>
+                        <p class="why__text">
+                            Kami memperhatikan pemilihan bahan, konstruksi jahitan, hasil akhir, dan keseluruhan detail
+                            produk.
+                        </p>
                     </li>
+
                     <li class="why__item reveal reveal--d1">
                         <span class="why__num" aria-hidden="true">02</span>
-                        <h3 class="why__title">Flexible</h3>
-                        <p class="why__text">Production can be adapted to different product types, specifications, and
-                            customer requirements.</p>
+                        <h3 class="why__title">Fleksibel</h3>
+                        <p class="why__text">
+                            Proses produksi dapat disesuaikan dengan berbagai jenis produk, spesifikasi, dan kebutuhan
+                            pelanggan.
+                        </p>
                     </li>
+
                     <li class="why__item reveal reveal--d2">
                         <span class="why__num" aria-hidden="true">03</span>
-                        <h3 class="why__title">Competitive</h3>
-                        <p class="why__text">We aim to provide practical production solutions that balance quality and
-                            cost.</p>
+                        <h3 class="why__title">Harga Kompetitif</h3>
+                        <p class="why__text">
+                            Kami berupaya memberikan solusi produksi yang praktis dengan menyeimbangkan kualitas dan
+                            biaya.
+                        </p>
                     </li>
+
                     <li class="why__item reveal reveal--d3">
                         <span class="why__num" aria-hidden="true">04</span>
-                        <h3 class="why__title">Easy to Work With</h3>
-                        <p class="why__text">Clear communication and a straightforward production process are part of
-                            how we work.</p>
+                        <h3 class="why__title">Mudah Diajak Bekerja Sama</h3>
+                        <p class="why__text">
+                            Komunikasi yang jelas dan proses produksi yang mudah dipahami merupakan bagian dari cara
+                            kami bekerja.
+                        </p>
                     </li>
                 </ol>
 
             </div>
         </section>
-
         <!-- ========== PRODUCTION PROCESS + QUALITY CONTROL ========== -->
         <section class="section" id="process" aria-labelledby="process-title">
             <div class="container">
 
                 <div class="section__header reveal">
-                    <p class="eyebrow">Our Process</p>
-                    <h2 id="process-title" class="section__title">From Idea to Finished Product</h2>
+                    <p class="eyebrow">Proses Produksi Kami</p>
+                    <h2 id="process-title" class="section__title">Dari Ide hingga Produk Jadi</h2>
                 </div>
 
                 <ol class="timeline">
                     <li class="timeline__step reveal">
-                        <span class="timeline__label">Step 01</span>
-                        <h3 class="timeline__title">Discuss</h3>
-                        <p class="timeline__text">Understand customer needs, product type, quantity, specifications, and
-                            requirements.</p>
+                        <span class="timeline__label">Langkah 01</span>
+                        <h3 class="timeline__title">Konsultasi</h3>
+                        <p class="timeline__text">Memahami kebutuhan pelanggan, jenis produk, jumlah pesanan,
+                            spesifikasi, dan persyaratan lainnya.</p>
                     </li>
+
                     <li class="timeline__step reveal reveal--d1">
-                        <span class="timeline__label">Step 02</span>
-                        <h3 class="timeline__title">Design &amp; Specification</h3>
-                        <p class="timeline__text">Finalize design, measurements, materials, colors, and production
-                            specifications.</p>
+                        <span class="timeline__label">Langkah 02</span>
+                        <h3 class="timeline__title">Desain & Spesifikasi</h3>
+                        <p class="timeline__text">Menentukan desain, ukuran, bahan, warna, dan spesifikasi produksi
+                            secara final.</p>
                     </li>
+
                     <li class="timeline__step reveal reveal--d2">
-                        <span class="timeline__label">Step 03</span>
-                        <h3 class="timeline__title">Material Preparation</h3>
-                        <p class="timeline__text">Prepare the required fabrics and supporting materials.</p>
+                        <span class="timeline__label">Langkah 03</span>
+                        <h3 class="timeline__title">Persiapan Bahan</h3>
+                        <p class="timeline__text">Menyiapkan kain dan bahan pendukung yang dibutuhkan untuk proses
+                            produksi.</p>
                     </li>
+
                     <li class="timeline__step reveal reveal--d3">
-                        <span class="timeline__label">Step 04</span>
-                        <h3 class="timeline__title">Cutting &amp; Sewing</h3>
-                        <p class="timeline__text">Production begins based on the agreed specifications.</p>
-                    </li>
-                    <li class="timeline__step reveal reveal--d4">
-                        <span class="timeline__label">Step 05</span>
-                        <h3 class="timeline__title">Finishing &amp; QC</h3>
-                        <p class="timeline__text">Products are checked, cleaned, finished, and prepared for delivery.
+                        <span class="timeline__label">Langkah 04</span>
+                        <h3 class="timeline__title">Pemotongan & Penjahitan</h3>
+                        <p class="timeline__text">Proses produksi dimulai berdasarkan spesifikasi yang telah disepakati.
                         </p>
                     </li>
+
+                    <li class="timeline__step reveal reveal--d4">
+                        <span class="timeline__label">Langkah 05</span>
+                        <h3 class="timeline__title">Penyelesaian & Pemeriksaan Kualitas</h3>
+                        <p class="timeline__text">Produk diperiksa, dibersihkan, disempurnakan, dan dipersiapkan untuk
+                            pengiriman.</p>
+                    </li>
+
                     <li class="timeline__step reveal reveal--d5">
-                        <span class="timeline__label">Step 06</span>
-                        <h3 class="timeline__title">Delivery</h3>
-                        <p class="timeline__text">Finished products are packed and delivered to the customer.</p>
+                        <span class="timeline__label">Langkah 06</span>
+                        <h3 class="timeline__title">Pengiriman</h3>
+                        <p class="timeline__text">Produk jadi dikemas dan dikirimkan kepada pelanggan.</p>
                     </li>
                 </ol>
 
@@ -566,50 +611,56 @@
 
                     <div class="quality__head">
                         <div class="reveal">
-                            <p class="eyebrow">Quality Control</p>
-                            <h3 id="quality-title" class="subsection__title">Quality at Every Stage</h3>
+                            <p class="eyebrow">Pengendalian Kualitas</p>
+                            <h3 id="quality-title" class="subsection__title">Kualitas di Setiap Tahap</h3>
                         </div>
+
                         <p class="quality__text reveal reveal--d1">
-                            Every production stage receives attention to ensure the finished product matches the agreed
-                            specifications and requirements.
+                            Setiap tahap produksi mendapatkan perhatian untuk memastikan produk jadi sesuai dengan
+                            spesifikasi
+                            dan kebutuhan yang telah disepakati.
                         </p>
                     </div>
 
-                    <ol class="quality__flow" aria-label="Production stages">
+                    <ol class="quality__flow" aria-label="Tahapan produksi">
                         <li class="quality__stage reveal">
                             <svg class="quality__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="m7.5 12.5 3 3 6-7" />
                             </svg>
-                            <span class="quality__name">Design</span>
+                            <span class="quality__name">Desain</span>
                         </li>
+
                         <li class="quality__stage reveal reveal--d1">
                             <svg class="quality__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="m7.5 12.5 3 3 6-7" />
                             </svg>
-                            <span class="quality__name">Material</span>
+                            <span class="quality__name">Bahan</span>
                         </li>
+
                         <li class="quality__stage reveal reveal--d2">
                             <svg class="quality__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="m7.5 12.5 3 3 6-7" />
                             </svg>
-                            <span class="quality__name">Production</span>
+                            <span class="quality__name">Produksi</span>
                         </li>
+
                         <li class="quality__stage reveal reveal--d3">
                             <svg class="quality__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="m7.5 12.5 3 3 6-7" />
                             </svg>
-                            <span class="quality__name">Finishing</span>
+                            <span class="quality__name">Penyelesaian</span>
                         </li>
+
                         <li class="quality__stage reveal reveal--d4">
                             <svg class="quality__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <circle cx="12" cy="12" r="10" />
                                 <path d="m7.5 12.5 3 3 6-7" />
                             </svg>
-                            <span class="quality__name">Packaging</span>
+                            <span class="quality__name">Pengemasan</span>
                         </li>
                     </ol>
 
@@ -617,101 +668,122 @@
 
             </div>
         </section>
-
         <!-- ========== PORTFOLIO ========== -->
         <section class="section section--alt" id="portfolio" aria-labelledby="portfolio-title">
             <div class="container">
 
                 <div class="section__header reveal">
-                    <p class="eyebrow">Portfolio</p>
-                    <h2 id="portfolio-title" class="section__title">Our Work</h2>
-                    <p class="lead">Explore examples of apparel and textile products that represent the range of
-                        production capabilities available at Athryn Creative Industries.</p>
+                    <p class="eyebrow">Portofolio</p>
+                    <h2 id="portfolio-title" class="section__title">Hasil Produksi Kami</h2>
+                    <p class="lead">Lihat berbagai contoh produk pakaian dan tekstil yang mewakili kemampuan produksi
+                        Athryn Creative Industries.</p>
                 </div>
 
-                <div class="portfolio__filters reveal" role="group" aria-label="Filter portfolio by category">
+                <div class="portfolio__filters reveal" role="group" aria-label="Filter portofolio berdasarkan kategori">
                     <button class="portfolio__filter is-active" type="button" data-filter="all"
-                        aria-pressed="true">All</button>
+                        aria-pressed="true">Semua</button>
                     <button class="portfolio__filter" type="button" data-filter="jackets"
-                        aria-pressed="false">Jackets</button>
+                        aria-pressed="false">Jaket</button>
                     <button class="portfolio__filter" type="button" data-filter="apparel"
-                        aria-pressed="false">Apparel</button>
+                        aria-pressed="false">Pakaian</button>
                     <button class="portfolio__filter" type="button" data-filter="uniform"
-                        aria-pressed="false">Uniform</button>
+                        aria-pressed="false">Seragam</button>
                     <button class="portfolio__filter" type="button" data-filter="pants"
-                        aria-pressed="false">Pants</button>
+                        aria-pressed="false">Celana</button>
                 </div>
 
                 <ul class="portfolio__grid">
 
-                    <!-- TODO: ganti <svg> di tiap .portfolio__media dengan:
-               <img src="assets/images/portfolio/nama.jpg" alt="..." loading="lazy" width="800" height="600"> -->
+                    <!-- TODO: ganti <svg> di setiap .portfolio__media dengan:
+                 <img src="assets/images/portfolio/nama.jpg" alt="..." loading="lazy" width="800" height="600"> -->
 
                     <li class="portfolio__item reveal" data-category="jackets">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-jacket" />
-                                </svg></div>
-                            <figcaption class="portfolio__caption">Jacket</figcaption>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/jaket.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <figcaption class="portfolio__caption">Jaket</figcaption>
                         </figure>
                     </li>
 
                     <li class="portfolio__item reveal reveal--d1" data-category="apparel">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <figcaption class="portfolio__caption">Polo Shirt</figcaption>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/polo.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <figcaption class="portfolio__caption">Kaos Polo</figcaption>
                         </figure>
                     </li>
 
                     <li class="portfolio__item reveal reveal--d2" data-category="apparel">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <figcaption class="portfolio__caption">T-Shirt</figcaption>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/kaos.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <figcaption class="portfolio__caption">Kaos</figcaption>
                         </figure>
                     </li>
 
                     <li class="portfolio__item reveal" data-category="uniform">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
-                            <figcaption class="portfolio__caption">Uniform</figcaption>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/pdh.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <figcaption class="portfolio__caption">Seragam</figcaption>
                         </figure>
                     </li>
 
                     <li class="portfolio__item reveal reveal--d1" data-category="pants">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-pants" />
-                                </svg></div>
-                            <figcaption class="portfolio__caption">Pants</figcaption>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/baggy.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
+                            <figcaption class="portfolio__caption">Celana</figcaption>
                         </figure>
                     </li>
 
                     <li class="portfolio__item reveal reveal--d2" data-category="apparel">
                         <figure>
-                            <div class="portfolio__media"><svg class="portfolio__icon" aria-hidden="true"
-                                    focusable="false">
-                                    <use href="#i-shirt" />
-                                </svg></div>
+                            <div class="portfolio__media"><img src="assets/images/portfolio/jersey.jpg" alt="..."
+                                    loading="lazy" width="800" height="600"></div>
                             <figcaption class="portfolio__caption">Jersey</figcaption>
                         </figure>
                     </li>
 
                 </ul>
 
-                <p class="portfolio__note reveal">Representative product categories shown. Photos of actual Athryn
-                    projects will be added.</p>
+                <p class="portfolio__note reveal">Kategori produk yang ditampilkan merupakan gambaran jenis produksi
+                    yang tersedia.
+                </p>
 
+            </div>
+        </section>
+        <!-- ========== CLIENTS (logo carousel) ========== -->
+        <!-- Cara isi: ganti tiap <span class="clients__placeholder"> dengan:
+             <img src="assets/clients/nama-client.png" alt="Nama Client" width="160" height="48" loading="lazy">
+             Tambah/kurangi <li> sesukanya. Cukup 1 daftar, duplikasi untuk efek loop dibuat otomatis oleh JS. -->
+        <section class="section section--compact clients" id="clients" aria-labelledby="clients-title">
+            <div class="container">
+                <div class="clients__head">
+                    <div class="reveal">
+                        <p class="eyebrow">Klien</p>
+                        <h2 id="clients-title" class="clients__title">
+                            Organisasi yang Telah Bekerja Sama dengan Kami
+                        </h2>
+                    </div>
+                    <button class="clients__toggle" id="clients-toggle" type="button"
+                        aria-label="Jeda guliran logo klien" hidden>Jeda</button>
+                </div>
+            </div>
+
+            <div class="clients__viewport" id="clients-viewport">
+                <ul class="clients__track" id="clients-track">
+                    <li class="clients__item"><img src="assets/clients/1.png" alt="Nama Client" width="160" height="48"
+                            loading="lazy"></li>
+                    <li class="clients__item"><img src="assets/clients/2.png" alt="Nama Client" width="160" height="48"
+                            loading="lazy"></li>
+                    <li class="clients__item"><img src="assets/clients/3.png" alt="Nama Client" width="160" height="48"
+                            loading="lazy"></li>
+                    <li class="clients__item"><img src="assets/clients/4.png" alt="Nama Client" width="160" height="48"
+                            loading="lazy"></li>
+                    <li class="clients__item"><img src="assets/clients/5.png" alt="Nama Client" width="160" height="48"
+                            loading="lazy"></li>
+                </ul>
             </div>
         </section>
 
@@ -720,15 +792,16 @@
             <div class="container contact">
 
                 <div class="contact__intro">
-                    <p class="eyebrow reveal">Contact</p>
-                    <h2 id="contact-title" class="section__title reveal reveal--d1">Let's Work Together</h2>
-                    <p class="lead reveal reveal--d2">Need a quotation or want to discuss your production needs?</p>
+                    <p class="eyebrow reveal">Kontak</p>
+                    <h2 id="contact-title" class="section__title reveal reveal--d1">Mari Bekerja Sama</h2>
+                    <p class="lead reveal reveal--d2">Butuh penawaran harga atau ingin mendiskusikan kebutuhan produksi
+                        Anda?</p>
                     <div class="reveal reveal--d3">
                         <a class="btn btn--primary btn--lg"
                             href="https://wa.me/6287733352160?text=Halo%20Athryn%20Creative%20Industries%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produksi%20apparel"
                             target="_blank" rel="noopener">
                             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                            Start a WhatsApp Conversation
+                            Mulai Percakapan via WhatsApp
                         </a>
                     </div>
                 </div>
@@ -763,10 +836,10 @@
                     <div class="contact__row">
                         <dt>
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            Location
+                            Lokasi
                         </dt>
                         <dd>
-                            Baleendah, Kabupaten Bandung, West Java, Indonesia
+                            Baleendah, Kabupaten Bandung, Jawa Barat, Indonesia
                         </dd>
                     </div>
 
@@ -783,32 +856,32 @@
             <div class="footer__grid">
 
                 <div class="footer__brand">
-                    <a href="#home" class="footer__wordmark" aria-label="Athryn Creative Industries, back to top">
+                    <a href="#home" class="footer__wordmark" aria-label="Athryn Creative Industries, kembali ke atas">
                         ATHRYN
                     </a>
 
                     <p class="footer__name">Athryn Creative Industries</p>
 
                     <p class="footer__desc">
-                        Apparel &amp; textile production partner based in Kabupaten Bandung, West Java.
+                        Mitra produksi pakaian dan tekstil yang berlokasi di Kabupaten Bandung, Jawa Barat.
                     </p>
                 </div>
 
-                <nav class="footer__col" aria-label="Footer navigation">
-                    <h2 class="footer__heading">Navigation</h2>
+                <nav class="footer__col" aria-label="Navigasi footer">
+                    <h2 class="footer__heading">Navigasi</h2>
 
                     <ul class="footer__list">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#portfolio">Portofolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer__col">
-                    <h2 class="footer__heading">Contact</h2>
+                    <h2 class="footer__heading">Kontak</h2>
 
                     <ul class="footer__list">
                         <li>
@@ -831,7 +904,7 @@
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2026 Athryn Creative Industries. All rights reserved.</p>
+                <p>&copy; 2026 Athryn Creative Industries. Hak cipta dilindungi.</p>
             </div>
         </div>
     </footer>
