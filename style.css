@@ -2318,3 +2318,44 @@ html {
 .portfolio__grid {
     align-content: start;
 }
+
+/* ---------- 17. Atur posisi foto di dalam kartu ---------- */
+.portfolio__media img,
+.product__media img {
+    object-position: var(--img-pos, 50% 50%);
+}
+
+/* ---------- 18. FIX FINAL: foto di kartu Products & Portfolio ---------- */
+.product .product__media,
+.portfolio__item .portfolio__media {
+    position: relative;
+    overflow: hidden;
+}
+
+.product .product__media img,
+.portfolio__item .portfolio__media img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    padding: clamp(0.5rem, 4%, 1.25rem) !important;
+    object-fit: contain !important;
+    /* seluruh produk kelihatan */
+    object-position: var(--img-pos, 50% 50%) !important;
+    /* default tepat di tengah */
+}
+
+/* Opsional: foto yang mau full-bleed (tambah class --cover di div media) */
+.product .product__media--cover img,
+.portfolio__item .portfolio__media--cover img {
+    padding: 0 !important;
+    object-fit: cover !important;
+}
+
+/* Mobile: kartu potret, bukan persegi, supaya kaos nggak kelihatan kecil */
+@media (max-width: 480px) {
+    .product__media {
+        aspect-ratio: 4 / 5;
+    }
+}
